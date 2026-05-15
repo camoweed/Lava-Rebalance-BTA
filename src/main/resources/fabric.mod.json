@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "lavarebalance",
+	"version": "${version}",
+	"name": "Lava Rebalance",
+	"description": "Disables cobblestone generators and other cheap lava tricks.",
+	"authors": [
+		"camoweed_"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"icon": "icon.png",
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"camoweed.lavarebalance.LavaRebalance"
+		],
+		"beforeGameStart": [
+			"camoweed.lavarebalance.LavaRebalance"
+		],
+		"afterGameStart": [
+			"camoweed.lavarebalance.LavaRebalance"
+		],
+		"recipesReady": [
+			"camoweed.lavarebalance.LavaRebalance"
+		]
+	},
+	"mixins": [
+		"lavarebalance.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${fabricloader}",
+		"halplibe": ">=${halplibe}",
+		"minecraft": "*",
+		"java": ">=${java}"
+	},
+	"suggests": {
+		"modmenu": ">=${modmenu}"
+	}
+}
